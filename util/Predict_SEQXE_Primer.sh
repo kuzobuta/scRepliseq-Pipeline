@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #scRepli-seq pipeline
-#Predict the SEQXE Primer from fastq file
+#Predict the SEQXE adaptor sequence from fastq file
 util_dir="/usr/local/bin/util"
 
 in_fastq=$1
@@ -26,6 +26,6 @@ grep CTGAAG ${prefix}.tab.L50.sort.txt | perl -ne 's/[ \t]+/\t/g;s/^\t//g; print
 #Check it by fastqc
 fastqc ${prefix}.tab.L50.SEQXE.fastq.gz
 
-echo "#scRepli-seq Predict the SEQXE primer end: `date`"
-echo "#Please check the FASTQC results and estimate the predicted SEQXE primer"
+echo "#scRepli-seq Predict the SEQXE adaptor sequence end: `date`"
+echo "#Please check the FASTQC results and estimate the predicted SEQXE adaptor sequence"
 
