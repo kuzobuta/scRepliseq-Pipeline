@@ -29,6 +29,7 @@ done
 #file set3 (Rscripts)
 files=("Generate_IGV_session_two_data.R" \
 "Generate_IGV_session_one_data.R" \
+"Generate_SEG_for_IGV.R" \
 "Step6_R_log2_median_RT_scores_HMM.R" \
 "Step6_R_log2_median_RT_scores.R" \
 "Step7_R_Binarization.R")
