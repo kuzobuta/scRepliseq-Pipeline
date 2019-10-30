@@ -7,7 +7,7 @@ util_dir="/usr/local/bin/util"
 in_fastq=$1
 out_dir=$2
 
-echo "#scRepli-seq Predict the SEQXE primer start: `date`"
+echo "#scRepli-seq Predict the SEQXE adaptor sequence start: `date`"
 
 mkdir -p ${out_dir}
 
