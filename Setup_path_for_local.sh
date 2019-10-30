@@ -19,7 +19,7 @@ done
 
 #file set2 under util
 files=("Fragment2bin.sh" \
-"Predict_SEQXE_Primer.sh")
+"Predict_SEQXE_Adaptor.sh")
 
 for file in ${files[@]}
 do
