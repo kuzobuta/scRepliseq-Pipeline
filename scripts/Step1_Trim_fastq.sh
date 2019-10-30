@@ -10,10 +10,10 @@ if [ $# -le 2 ] ; then
     echo ""
     echo "arguments:"
     echo ""
-    echo "index_seq		Index adaptor sequence"
+    echo "index_seq     Illumina index adaptor sequence"
     echo "in_fastq		The path of fastq file"
     echo "out_fastq1	The path of adaptor trimmed fastq file"
-    echo "SEQXE			SEQXE primer sequence (optional)"
+    echo "SEQXE			SEQXE adaptor sequence (optional)"
     echo "out_fastq2	The path of adaptor & SEQXE-primer trimmed fastq file (optional)"
     echo ""
     echo "For TruSeq Single Indexes, you can use index_seq as "
@@ -24,7 +24,7 @@ fi
 
 echo "#scRepli-seq Step1 Adaptor trimming	start: `date`"
 
-#This index sequence is for illumina TruSeq Single Indexes
+#This index sequence is for Illumina TruSeq Single Indexes
 index_seq=$1
 #index_seq="GATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG"
 
