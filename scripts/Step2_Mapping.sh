@@ -28,7 +28,7 @@ echo "#scRepli-seq Step2 Mapping start: `date`"
 #Step2.1 Mapping
 FASTQ=$1
 index=$2
-genome_short_name=$3 #Ex: mm9, hg19
+genome=$3 #Ex: mm9, hg19
 THREAD=$4 #It depends on your machine
 OUTNAME=$5
 
