@@ -36,6 +36,8 @@ RUN apt update -y && apt install -y r-base=3.4.4-1xenial0
 RUN R -e 'install.packages("BiocInstaller", repos="http://bioconductor.org/packages/3.4/bioc")'
 RUN R -e 'install.packages("ggplot2"); install.packages("gtable"); install.packages("plyr")'
 RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/cowplot/cowplot_0.9.4.tar.gz", repos=NULL, method="libcurl", dependencies=TRUE)'
+RUN R -e 'install.packages("bitops")'
+RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/caTools/caTools_1.17.1.2.tar.gz", type="source", repos=NULL, dependencies=TRUE)'
 RUN R -e 'library(BiocInstaller); biocLite("AneuFinder")'
 RUN R -e 'install.packages("pracma"); install.packages("optparse"); install.packages("XML")'
 
