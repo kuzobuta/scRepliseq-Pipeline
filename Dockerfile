@@ -66,8 +66,8 @@ COPY util/ util/
 
 ENV PATH=/usr/local/bin/scripts/:$PATH
 
-RUN chmod +x scripts/*sh
-RUN chmod +x util/*sh
+RUN chmod +x scripts/*.sh
+RUN chmod +x util/*.sh
 
 CMD ["pipeline-list.sh"]
 
