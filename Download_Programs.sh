@@ -12,15 +12,15 @@ cd ..
 ln -s bwa-0.7.10 bwa
 
 ## SOFTWARE: samtools
-## VERSION: 1.2
+## VERSION: 1.3.1
 ## TYPE: file format converter
 ## SOURCE_URL: https://github.com/samtools/samtools
-wget https://github.com/samtools/samtools/releases/download/1.2/samtools-1.2.tar.bz2
-tar -xjf samtools-1.2.tar.bz2
-cd samtools-1.2
+wget https://github.com/samtools/samtools/releases/download/1.3.1/samtools-1.3.1.tar.bz2
+tar -xjf samtools-1.3.1.tar.bz2
+cd samtools-1.3.1
 make
 cd ..
-ln -s samtools-1.2 samtools
+ln -s samtools-1.3.1 samtools
 PATH=/usr/local/bin/samtools/:$PATH
 
 ## SOFTWARE: samstat
@@ -36,7 +36,7 @@ cd ..
 ln -s samstat-1.5.1 samstat
 
 ## SOFTWARE: FastQC
-wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip
+wget https://github.com/s-andrews/FastQC/archive/v0.11.8.zip
 unzip fastqc_v0.11.8.zip
 chmod 755 FastQC/fastqc
 ln -s FastQC/fastqc /usr/local/bin/fastqc
