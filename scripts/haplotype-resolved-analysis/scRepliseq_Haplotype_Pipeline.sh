@@ -3,6 +3,10 @@
 #Example scripts for haplotype-resolved scRepli-seq analysis
 #Please use "AneuFinder 1.2.1"
 
+###################cat gz file##############
+cat sample_data/CBMS1_d0_G1_Merged.cba.rmdup.bed.gz-* > sample_data/CBMS1_d0_G1_Merged.cba.rmdup.bed.gz 
+cat sample_data/CBMS1_d0_G1_Merged.msm.rmdup.bed.gz-* > sample_data/CBMS1_d0_G1_Merged.msm.rmdup.bed.gz 
+
 ###################Step1 load maternal/paternal allele bed file##################
 resultdir="test_results"
 blacklist="sample_data/mm9-blacklist-id.bed"
