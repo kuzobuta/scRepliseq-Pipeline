@@ -1,0 +1,5 @@
+chr12	74800000	121200000	cba	high_copy
+chr18	NA	NA	cba	filter_out
+chr18	NA	NA	msm	filter_out
+chrX	NA	NA	cba	X_specific
+chrX	NA	NA	msm	X_specific
