@@ -5,7 +5,7 @@
 Date: 2021/03/05
 
 * Add example scripts and data sets for population-based BrdUIP repliseq analysis
-* See [here](https://github.com/kuzobuta/scRepliseq-Pipeline/tree/master/scripts/BrdUIP-analysis) 
+* BrdUIP repliseq analysis can be found [here](https://github.com/kuzobuta/scRepliseq-Pipeline/tree/master/scripts/BrdUIP-analysis) 
 
 ## [v1.2](https://github.com/kuzobuta/scRepliseq-Pipeline/compare/v1.1...v1.2)
 
