@@ -1,5 +1,5 @@
 # Population-based BrdU-IP analysis
--
+---
 
 **Before performing BrdUIP data analysis, please geenerate the bam file or fragment R file for each Early-S or Late-S data**
 
