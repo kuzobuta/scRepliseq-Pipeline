@@ -6,7 +6,7 @@
 #ver. 210304
 
 if [ $# -le 4 ] ; then
-    echo "Usage: bash StepX1_BrdUIP_from_bam_file.sh [Early_S] [Late_S] [name] [out_dir] [blacklist] [genome_file]"
+    echo "Usage: bash StepX1_BrdUIP_from_R_file.sh [Early_S] [Late_S] [name] [out_dir] [blacklist] [genome_file]"
     echo ""
     echo "Load the mapped reads, convert into Rdata format, and binning the data in Rdata format"
     echo ""
