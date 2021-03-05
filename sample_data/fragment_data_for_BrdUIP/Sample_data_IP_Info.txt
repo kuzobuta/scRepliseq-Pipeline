@@ -1,0 +1,4 @@
+#RPE1 BrdUIP sampleInfo			
+#Fragment_File_Name	Fraction	Name_In_GEO	GSM
+1_RPE1_IP_EarlyS_mapq10_blacklist_fragment.Rdata	EarlyS	RPE1_BrdUIP_EarlyS	GSM2904945
+2_RPE1_IP_LateS_mapq10_blacklist_fragment.Rdata	LateS	RPE1_BrdUIP_LateS	GSM2904946
