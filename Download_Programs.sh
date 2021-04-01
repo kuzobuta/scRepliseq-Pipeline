@@ -37,6 +37,6 @@ ln -s samstat-1.5.1 samstat
 
 ## SOFTWARE: FastQC
 wget https://github.com/s-andrews/FastQC/archive/v0.11.8.zip
-unzip fastqc_v0.11.8.zip
-chmod 755 FastQC/fastqc
-ln -s FastQC/fastqc /usr/local/bin/fastqc
+unzip v0.11.8.zip
+chmod 755 FastQC-0.11.8/fastqc
+ln -s FastQC-0.11.8/fastqc /usr/local/bin/fastqc
