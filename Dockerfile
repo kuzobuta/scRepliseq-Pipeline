@@ -39,7 +39,7 @@ RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/cowpl
 RUN R -e 'install.packages("bitops")'
 RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/caTools/caTools_1.17.1.2.tar.gz", type="source", repos=NULL, dependencies=TRUE)'
 RUN R -e 'library(BiocInstaller); biocLite("AneuFinder")'
-RUN R -e 'install.packages("pracma"); install.packages("optparse"); install.packages("XML")'
+RUN R -e 'install.packages("pracma"); install.packages("optparse"); install.packages("XML"); install.packages("zoo")'
 
 WORKDIR /usr/local/bin
 COPY Download_Programs.sh .
