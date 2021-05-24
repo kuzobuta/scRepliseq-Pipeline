@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 #BrdUIP w200k s40k analysis using AneuFinder#
 #From bam file
-#Hisashi Miura <hisashi.miura@riken.jp>
+#Hisashi Miura <hisashi.miura[at]riken.jp>
 #version: 210304
 #
 #$ Rscript <XXX.R> \
@@ -56,10 +56,10 @@ dir.create(outdir_f,showWarnings = FALSE)
 #0. load data from bam file
 ##Load the bam file & save the fragment file (>10 MAPQ), filtering out the blacklist regions##
 raw_reads=bam2GRanges(bam_E,remove.duplicate.reads = TRUE,min.mapq = 10,blacklist = blacklist)
-save(raw_reads,file = paste0(out_dir_f,"/",name,"_EarlyS_",ext))
+save(raw_reads,file = paste0(outdir_f,"/",name,"_EarlyS_",ext))
 
 raw_reads=bam2GRanges(bam_L,remove.duplicate.reads = TRUE,min.mapq = 10,blacklist = blacklist)
-save(raw_reads,file = paste0(out_dir_f,"/",name,"_LateS_",ext))
+save(raw_reads,file = paste0(outdir_f,"/",name,"_LateS_",ext))
 
 ##############################################################
 #1. Generate sliding window bins
@@ -191,7 +191,7 @@ RT_IP_rpm_q_analysis = function(name,Efile,Lfile,genome,blacklist,x_gr){
 ##############################################################
 
 ##################Run###########################
-fragment_E=paste0(out_dir_f,"/",name,"_EarlyS_",ext)
-fragment_L=paste0(out_dir_f,"/",name,"_LateS_",ext)
+fragment_E=paste0(outdir_f,"/",name,"_EarlyS_",ext)
+fragment_L=paste0(outdir_f,"/",name,"_LateS_",ext)
 
 RT_IP_rpm_q_analysis(name,fragment_E,fragment_L,genome,blacklist,x_gr)
