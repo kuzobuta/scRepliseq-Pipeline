@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 #BrdUIP w200k s40k analysis using AneuFinder#
 #From fragment.Rdata
-#Hisashi Miura <hisashi.miura@riken.jp>
+#Hisashi Miura <hisashi.miura[at]riken.jp>
 #version: 210304
 #
 #$ Rscript <XXX.R> \
