@@ -4,7 +4,7 @@
 
 Date: 2022/08/18
 
-* Update Step5_Haplotype_log2med.R
+* Update `Step5_Haplotype_log2med.R`
 
 ## v1.3
 
