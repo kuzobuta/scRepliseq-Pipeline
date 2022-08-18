@@ -1,4 +1,4 @@
-# scRepliseq-Pipeline version 210305
+# scRepliseq-Pipeline version 220818
 
 Release notes can be found [here](https://github.com/kuzobuta/scRepliseq-Pipeline/blob/master/Change_logs.md).
 
