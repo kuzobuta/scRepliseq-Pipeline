@@ -1,5 +1,11 @@
 # Release notes
 
+## [v1.3.1]
+
+Date: 2022/08/18
+
+* Update Step5_Haplotype_log2med.R
+
 ## [v1.3](https://github.com/kuzobuta/scRepliseq-Pipeline/compare/v1.2...v1.3)
 
 Date: 2021/03/05
