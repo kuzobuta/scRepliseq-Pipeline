@@ -45,10 +45,10 @@ load(black_file) #blacklist_haplotype
 #############
 window=1000000
 #sliding=40000
-sliding=200000 #change the condition as Nat Protoc. [200kb]
+sliding=200000 #change the condition as Nat Protoc. [200kb] #2 issue
 W="1M"
 #S="40k"
-S="200k" #change the condition as Nat Protoc. [200kb]
+S="200k" #change the condition as Nat Protoc. [200kb] #2 issue
 
 ####Sliding window function####
 lcm=Lcm(window,sliding)
