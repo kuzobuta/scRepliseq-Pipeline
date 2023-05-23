@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.4
+
+Date: 2023/05/10
+
+* Update `Docker` file
+
 ## v1.3.1
 
 Date: 2022/08/18
