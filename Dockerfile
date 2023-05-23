@@ -60,7 +60,7 @@ ENV PATH=/usr/local/bin/samstat/src/:$PATH
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 RUN mkdir -p scripts
-COPY scripts/ scripts/
+COPY scripts/*.sh scripts/
 RUN mkdir -p util
 COPY util/ util/
 
