@@ -29,6 +29,7 @@ files=list.files(in_dirs,pattern = ".bedGraph")
 files1=NULL
 for (file in files){
   files1=c(files1,paste0(in_dirs,"/",file))
+  print(file)
 }
 
 ################Order the file names by the sorted order################
@@ -49,7 +50,8 @@ for (file in files1_srt){
   i=i+1
   out_i=formatC(i,width=w,flag="0")
   filename=paste0(out_i,"_",file)
-  in_file=paste0(in_dirs,"/",file)
+  #in_file=paste0(in_dirs,"/",file)
+  in_file=file
   if(i==1){
     tmp=read.table(in_file,sep="\t")
     tmp_seg.mean=tmp[,4]
