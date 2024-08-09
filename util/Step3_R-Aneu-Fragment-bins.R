@@ -43,6 +43,7 @@ bins_reads=binReads(raw_reads,
                     chromosomes=chromosomes,
                     binsizes=c(40000,80000,100000,200000,500000))
 
+names(bins_reads) = c(40000,80000,100000,200000,500000)
 rpm=1000000/length(raw_reads)
 bins_reads[["rpm"]]=rpm
 save(bins_reads,file=paste(out_dir_b,"/",name,ext2,sep=""))
