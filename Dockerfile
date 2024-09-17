@@ -48,7 +48,11 @@ RUN . Download_Programs.sh
 ## installing Miniconda version 4.6.14
 RUN wget https://repo.continuum.io/miniconda/Miniconda2-4.6.14-Linux-x86_64.sh && bash Miniconda2-4.6.14-Linux-x86_64.sh -p /miniconda2 -b
 ENV PATH=/miniconda2/bin:$PATH
-RUN conda update -y conda && rm Miniconda2-4.6.14-Linux-x86_64.sh
+RUN conda config --add channels conda-forge
+RUN conda config --remove channels defaults
+RUN conda config --set channel_priority strict
+RUN conda update -y --all
+RUN rm Miniconda2-4.6.14-Linux-x86_64.sh
 RUN conda install -y -c bioconda cutadapt=1.18
 RUN conda install -y -c bioconda seqtk=1.3
 RUN conda install -y -c bioconda picard=2.20.2
@@ -71,4 +75,3 @@ RUN chmod +x scripts/*.sh
 RUN chmod +x util/*.sh
 
 CMD ["pipeline-list.sh"]
-
