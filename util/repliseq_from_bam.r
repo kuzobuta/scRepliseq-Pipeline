@@ -56,10 +56,10 @@ dir.create(outdir_f,showWarnings = FALSE)
 #0. load data from bam file
 ##Load the bam file & save the fragment file (>10 MAPQ), filtering out the blacklist regions##
 raw_reads=bam2GRanges(bam_E,remove.duplicate.reads = TRUE,min.mapq = 10,blacklist = blacklist)
-save(raw_reads,file = paste0(outdir_f,"/",name,"_EarlyS_",ext))
+save(raw_reads,file = paste0(outdir_f,"/",name,"_EarlyS",ext))
 
 raw_reads=bam2GRanges(bam_L,remove.duplicate.reads = TRUE,min.mapq = 10,blacklist = blacklist)
-save(raw_reads,file = paste0(outdir_f,"/",name,"_LateS_",ext))
+save(raw_reads,file = paste0(outdir_f,"/",name,"_LateS",ext))
 
 ##############################################################
 #1. Generate sliding window bins
