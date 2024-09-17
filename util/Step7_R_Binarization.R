@@ -100,7 +100,7 @@ out=data.frame(chr=seqnames(binned.MAP.HMM.2[[2]]),starts=start(binned.MAP.HMM.2
 binary_out=out
 binary_out$copy.numbers[out$copy.numbers==1]=-1
 binary_out$copy.numbers[out$copy.numbers==2]=1
-write.table(binary_out,paste0(out_dir,"/binary/",name,"_",ksize,"k_100S_MAP_2HMM2_eps0.01.binary_",somy,".bedGraph"),sep="\t",col.names=F,row.names=F,quote=F)
+write.table(binary_out,paste0(out_dir,"/binary/",name,"_",ksize,"k_100S_MAP_2HMM_eps0.01.binary_",somy,".bedGraph"),sep="\t",col.names=F,row.names=F,quote=F)
 
 
 
