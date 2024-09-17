@@ -61,6 +61,7 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 RUN mkdir -p scripts
 COPY scripts/*.sh scripts/
+COPY scripts/BrdUIP-analysis/*.sh scripts/
 RUN mkdir -p util
 COPY util/ util/
 
