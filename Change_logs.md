@@ -1,8 +1,8 @@
 # Release notes
 
-## v1.5
+## v1.4.2
 
-Date: 2024/08/09
+Date: 2024/09/18
 
 ## [v1.4](https://github.com/kuzobuta/scRepliseq-Pipeline/compare/v1.3.1...v1.4)
 
