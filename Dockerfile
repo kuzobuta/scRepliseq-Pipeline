@@ -45,7 +45,7 @@ WORKDIR /usr/local/bin
 COPY Download_Programs.sh .
 RUN . Download_Programs.sh
 
-## installing Miniconda version 4.6.14
+## Installing Miniconda version 4.6.14
 RUN wget https://repo.continuum.io/miniconda/Miniconda2-4.6.14-Linux-x86_64.sh && bash Miniconda2-4.6.14-Linux-x86_64.sh -p /miniconda2 -b
 ENV PATH=/miniconda2/bin:$PATH
 RUN conda update -y conda && rm Miniconda2-4.6.14-Linux-x86_64.sh
@@ -56,6 +56,22 @@ RUN conda install -y -c bioconda picard=2.20.2
 ENV PATH=/usr/local/bin/bwa/:$PATH
 ENV PATH=/usr/local/bin/samtools/:$PATH
 ENV PATH=/usr/local/bin/samstat/src/:$PATH
+
+## Install pip3 for python3
+RUN apt install python3-pip -y \
+ && rm -rf /var/lib/apt/lists/*
+
+## Install py3 version of cutadapt [multi-threading]
+RUN pip3 install cutadapt==2.10
+
+## Clean conda env
+RUN conda clean -a -y
+
+## Disable old version of cutadapt (py2)
+RUN mv /miniconda2/bin/cutadapt /miniconda2/bin/cutadapt-old
+
+## Install parallel
+RUN conda install parallel
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
@@ -70,4 +86,3 @@ RUN chmod +x scripts/*.sh
 RUN chmod +x util/*.sh
 
 CMD ["pipeline-list.sh"]
-
