@@ -1,7 +1,7 @@
 #!/bin/bash
-
 #scRepli-seq pipeline
 #Step2 Mapping & Mark duplicates
+#v250825
 
 if [ $# -le 4 ] ; then
     echo "Usage: bash Step2_Mapping.sh [Fastq_file] [bwa_index_file] [genome_name] [thread] [out_bam_file_name]"
@@ -22,7 +22,7 @@ if [ $# -le 4 ] ; then
     exit 0
 fi
 
-echo "#scRepli-seq Step2 Mapping start: `date`"
+echo "#scRepli-seq Step2 Mapping start: $(date)"
 
 
 #Step2.1 Mapping
