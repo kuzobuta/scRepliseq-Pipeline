@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.4.4
+
+Date: 2025/08/26
+
+* Update `Docker` file & shell scripts
+
 ## v1.4
 
 Date: 2023/05/10
