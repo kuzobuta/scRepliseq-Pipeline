@@ -4,6 +4,10 @@
 
 Date: 2024/09/18
 
+* Add `test_run.sh`
+
+Date: 2026/02/25
+
 ## [v1.4](https://github.com/kuzobuta/scRepliseq-Pipeline/compare/v1.3.1...v1.4)
 
 Date: 2023/05/10
