@@ -45,7 +45,7 @@ for (fragfile in files){
                      assembly=genome,
                      chromosomes=chromosomes,
                      binsizes=binsizes)
- 
+ names(bins_reads) = binsizes
  rpm=1000000/length(raw_reads)
  bins_reads[["rpm"]]=rpm
  save(bins_reads,file=paste(out_dir,"/",name,ext2,sep=""))
