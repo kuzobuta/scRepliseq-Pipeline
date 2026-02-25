@@ -203,7 +203,7 @@ $binfile $out_dir $ref_Rdata $genome_file $binsize $somy \
 echo "# Done step7:      $(date)"
 
 echo "# End   test run:  $(date)"
-echo "# The scripts finished successfully.
+echo "# Test run finished successfully."
 
 end=$(date +%s)
 elapsed=$((end - start))
