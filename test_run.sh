@@ -177,7 +177,7 @@ $fragment_file $out_dir $ref_Rdata $blacklist $genome_file \
 echo "# Done step6:      $(date)"
 
 # ---------------------
-# 07. Log2 med score
+# 07. HMM
 # ---------------------
 
 # 1-somy
