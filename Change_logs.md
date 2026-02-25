@@ -6,7 +6,9 @@ Date: 2024/09/18
 
 Date: 2026/02/25
 
-* Add `test_run.sh` using new conda env
+* Add `test_run.sh` using new conda env (`screpliseq_v1.5.yml`)
+* Add `QUERY.adapter_filtered2.hg19_female.bam`
+* Small bug fix in `fragment2bin.R`
 
 ## [v1.4](https://github.com/kuzobuta/scRepliseq-Pipeline/compare/v1.3.1...v1.4)
 
